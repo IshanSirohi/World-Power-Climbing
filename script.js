@@ -22,12 +22,12 @@ const COIN_SIZE = 22;
 const COIN_SPAWN_CHANCE = 0.4;      // 40% chance a platform gets a coin
 const BOOSTER_SPAWN_CHANCE = 0.06;  // 6% chance a platform gets a jet booster
 const BOOSTER_FORCE = -18;          // Strong upward thrust
-const BOOSTER_DURATION = 90;        // Frames of boost (~1.5 seconds)
+const BOOSTER_DURATION = 250;        // Frames of boost (~1.5 seconds)
 const BOOSTER_SIZE = 28;
 
 // ─── Characters ─────────────────────────────────────────────
 const CHARACTERS = {
-  modi: { name: 'Modi', emoji: '🇮🇳', img: 'assets/images/char_modi2.png', currency: '₹', currencyName: 'Rupee', currencyColor: '#ff9933' },
+  modi: { name: 'Modi', emoji: '🇮🇳', img: 'assets/images/char_modi1.png', currency: '₹', currencyName: 'Rupee', currencyColor: '#ff9933' },
   trump: { name: 'Trump', emoji: '🇺🇸', img: 'assets/images/char_trump1.png', currency: '$', currencyName: 'Dollar', currencyColor: '#85bb65' },
   putin: { name: 'Putin', emoji: '🇷🇺', img: 'assets/images/char_putin1.png', currency: '₽', currencyName: 'Ruble', currencyColor: '#c0392b' },
   zelensky: { name: 'Zelensky', emoji: '🇺🇦', img: 'assets/images/char_zelensky1.png', currency: '₴', currencyName: 'Hryvnia', currencyColor: '#3498db' },
