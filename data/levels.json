@@ -1,0 +1,60 @@
+{
+  "zones": [
+    {
+      "name": "Beginner Zone",
+      "scoreMin": 0,
+      "scoreMax": 500,
+      "platformTypes": ["normal"],
+      "platformSpeed": 0,
+      "spawnRate": 70,
+      "platformWidth": [80, 120],
+      "gapRange": [50, 90],
+      "scrollSpeed": 2,
+      "memeEventChance": 0.02,
+      "bgColor1": "#1a1016",
+      "bgColor2": "#2a1520"
+    },
+    {
+      "name": "Mid Zone",
+      "scoreMin": 500,
+      "scoreMax": 1500,
+      "platformTypes": ["normal", "breaking", "moving"],
+      "platformSpeed": 1.5,
+      "spawnRate": 60,
+      "platformWidth": [60, 100],
+      "gapRange": [60, 110],
+      "scrollSpeed": 3,
+      "memeEventChance": 0.05,
+      "bgColor1": "#2a1520",
+      "bgColor2": "#3a1a25"
+    },
+    {
+      "name": "Hard Zone",
+      "scoreMin": 1500,
+      "scoreMax": 3000,
+      "platformTypes": ["normal", "breaking", "moving", "disappearing", "fake"],
+      "platformSpeed": 2.5,
+      "spawnRate": 50,
+      "platformWidth": [50, 90],
+      "gapRange": [70, 130],
+      "scrollSpeed": 4,
+      "memeEventChance": 0.08,
+      "bgColor1": "#3a1a25",
+      "bgColor2": "#4a0e1c"
+    },
+    {
+      "name": "CHAOS Zone",
+      "scoreMin": 3000,
+      "scoreMax": 999999,
+      "platformTypes": ["normal", "breaking", "moving", "disappearing", "fake"],
+      "platformSpeed": 3.5,
+      "spawnRate": 40,
+      "platformWidth": [40, 80],
+      "gapRange": [80, 150],
+      "scrollSpeed": 5.5,
+      "memeEventChance": 0.15,
+      "bgColor1": "#4a0e1c",
+      "bgColor2": "#2a0008"
+    }
+  ]
+}

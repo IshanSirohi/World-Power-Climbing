@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="description"
+    content="World Power Climb – A hilarious endless climbing arcade game featuring world leaders as helicopter birds! Jump higher, avoid traps, survive the chaos zone." />
+  <meta name="theme-color" content="#4a0e1c" />
+  <title>World Power Climb 🌍👑</title>
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div id="game-wrapper">
+
+    <!-- ─── Canvas ─── -->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- ─── HUD ─── -->
+    <div id="hud" style="display:none;">
+      <div class="hud-item">🏆 Score: <span id="score-value">0</span></div>
+      <div class="hud-item hud-currency"><span id="currency-icon">💰</span> <span id="currency-value">0</span></div>
+      <div class="hud-item">📏 <span id="altitude-value">0m</span></div>
+    </div>
+
+    <!-- ─── Zone Banner ─── -->
+    <div id="zone-banner"></div>
+
+    <!-- ─── Meme Popup ─── -->
+    <div id="meme-popup"></div>
+
+    <!-- ─── Character Quote ─── -->
+    <div id="char-quote"></div>
+
+    <!-- ─── Sound Toggle ─── -->
+    <button id="sound-toggle" title="Toggle Sound">🔊</button>
+
+    <!-- ─── Start Screen ─── -->
+    <div id="start-screen" class="overlay-screen">
+      <img class="logo-img" src="assets/images/logo.png" alt="World Power Climb" />
+
+      <div class="premium-sub">Endless Political Satire</div>
+      <h2>Choose your leader & climb to power</h2>
+
+      <div class="divider"></div>
+
+      <div class="char-select-label">Select Character</div>
+      <div class="char-grid">
+        <div class="char-card" data-char="modi">
+          <img class="char-img" src="assets/images/char_modi.png" alt="Modi" />
+          <div class="char-flag">🇮🇳</div>
+          <div class="char-name">Modi</div>
+        </div>
+        <div class="char-card" data-char="trump">
+          <img class="char-img" src="assets/images/char_trump.png" alt="Trump" />
+          <div class="char-flag">🇺🇸</div>
+          <div class="char-name">Trump</div>
+        </div>
+        <div class="char-card" data-char="putin">
+          <img class="char-img" src="assets/images/char_putin.png" alt="Putin" />
+          <div class="char-flag">🇷🇺</div>
+          <div class="char-name">Putin</div>
+        </div>
+        <div class="char-card" data-char="zelensky">
+          <img class="char-img" src="assets/images/char_zelensky.png" alt="Zelensky" />
+          <div class="char-flag">🇺🇦</div>
+          <div class="char-name">Zelensky</div>
+        </div>
+        <div class="char-card" data-char="xi">
+          <img class="char-img" src="assets/images/char_xi.png" alt="Xi" />
+          <div class="char-flag">🇨🇳</div>
+          <div class="char-name">Xi</div>
+        </div>
+        <div class="char-card" data-char="kim">
+          <img class="char-img" src="assets/images/char_kim.png" alt="Kim" />
+          <div class="char-flag">🇰🇵</div>
+          <div class="char-name">Kim</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ─── Game Over Screen ─── -->
+    <div id="gameover-screen" class="overlay-screen hidden">
+      <h1>GAME OVER</h1>
+      <p class="final-score">Score: <span id="final-score">0</span></p>
+      <p class="final-currency"><span id="final-currency-icon">💰</span> Collected: <span id="final-currency">0</span>
+      </p>
+      <p class="best-score">Best: <span id="best-score">0</span></p>
+      <div class="btn-group">
+        <button id="btn-restart" class="btn btn-primary">🔄 RESTART</button>
+        <button id="btn-menu" class="btn btn-secondary">🏠 MENU</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
