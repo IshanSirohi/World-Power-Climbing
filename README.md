@@ -31,7 +31,6 @@ Due to browser CORS and security rules restricting the loading of local `json` a
 | :--- | :--- | :--- |
 | **Move Left** | `A` or `←` Arrow | Tap/Hold Left Half of Screen |
 | **Move Right** | `D` or `→` Arrow | Tap/Hold Right Half of Screen |
-| **Start / Restart** | `Spacebar` / Click | Tap "Play" Button |
 
 ## 🏗️ Platform Types
 
